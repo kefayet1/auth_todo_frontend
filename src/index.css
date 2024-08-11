@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button-custom-color {
+    background-color: #6366F1;
+  }
+  
+  .button-custom-color:hover {
+    background-color: #5458d9; 
+  }
+  
+  .button-custom-color:focus {
+    background-color: #a2a5f7; 
+  }
+
+.myWidth{
+  width: -50px;
+  padding: 5px;
+  margin: 1px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.blink-cursor {
+  animation: blink 1s infinite; /* Adjust the duration as needed */
+}
